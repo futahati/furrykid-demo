@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!-- lang要修改 en→ zh-tw -->
+<html lang="zh-tw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>資訊填寫</title>
+</head>
+<body>
+    <form action="">
+        <hr>
+        <h2>家長資訊區</h2>
+        <hr>
+        <p>
+            <label for="name">姓名：</label>
+            <!-- required：欄位成為必填／placeholder：輸入框內顯示提示文字 -->
+            <input required type="text" id="name" name="name">
+        </p>
+        <p>
+            <label for="idcard">身份證字號：</label>
+            <input type="text" id="idcard" name="idcard">
+        </p>
+        <p>
+            <label for="address">通訊地址：</label>
+            <input type="text" id="address" name="address">
+        </p>
+        <p>
+            <label for="tel">住家電話：</label>
+            <input type="tel" id="tel" name="tel">
+        </p>
+        <p>
+            <label for="phone">手機號碼：</label>
+            <input required type="tel" id="phone" name="phone" placeholder="必填！">
+        </p>
+        <p>
+            <!-- ICE緊急聯絡人縮寫 -->
+            <label for="icename">緊急聯絡人：</label>
+            <input required type="text" id="icename" name="icename" placeholder="新增其他人">
+        </p>
+        <p>
+            <label for="icecall">緊急聯絡人手機：</label>
+            <input required type="tel" id="icecall" name="icecall">
+        </p>
+        <p>
+            <!-- Vet動物診所縮寫 -->
+            <label for="vet">指定動物醫院：</label>
+            <input type="text" id="vet" name="vet" placeholder="未指定時，選擇就近合格之動物醫療機構">
+        </p>
+        <hr>
+        <h2>毛孩兒資訊區</h2>
+        <hr>
+        <p>
+            <label for="petname">名字：</label>
+            <input type="text" id="petname" name="petname">
+        </p>
+        <p>
+            <label for="breed">品種：</label>
+            <input type="text" id="breed" name="breed">
+        </p>
+        <p>
+            <label for="age">年齡：</label>
+            <input type="number" id="age" name="age">
+        </p>
+        <p>
+            <label for="gender">性別：</label>
+            <input type="radio" name="gender1" id="gender1" value="male" checked>男孩
+            <input type="radio" name="gender2" id="gender2" value="female">女孩
+        </p>
+        <p>
+            <!-- PID (Pet ID)寵物識別碼縮寫 -->
+            <label for="petid">晶片號碼：</label>
+            <input required type="text" id="petid" name="petid">
+            <br>
+            如未登記者，請描述如何識別毛孩兒
+        </p>
+        <p>
+            <label for="personality">個性描述：</label>
+            <input required type="text" id="personality" name="personality">
+            <br>
+            例如：是否具攻擊性、小害羞、愛撒嬌等。
+        </p>
+
+        <!-- reset所有欄位會回到初始狀態 -->
+        <button type="reset">清除</button>
+        <button type="submit">送出</button>
+    </form>
+    
+</body>
+</html>
