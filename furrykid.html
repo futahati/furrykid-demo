@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <!-- lang要修改 en→ zh-tw -->
 <html lang="zh-tw">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>資訊填寫</title>
 </head>
+
 <body>
     <form action="">
         <hr>
@@ -47,6 +49,9 @@
             <input type="text" id="vet" name="vet" placeholder="未指定時，選擇就近合格之動物醫療機構">
         </p>
         <hr>
+        <!-- 利用 JavaScript (JS) 在點擊按鈕時，複製一組小孩的 HTML 結構並插入到表單中 -->
+        <button>新增</button>
+        <hr>
         <h2>毛孩兒資訊區</h2>
         <hr>
         <p>
@@ -71,19 +76,20 @@
             <label for="petid">晶片號碼：</label>
             <input required type="text" id="petid" name="petid">
             <br>
-            如未登記者，請描述如何識別毛孩兒
+            <span>如未登記者，請描述如何識別毛孩兒</span>
         </p>
         <p>
             <label for="personality">個性描述：</label>
             <input required type="text" id="personality" name="personality">
             <br>
-            例如：是否具攻擊性、小害羞、愛撒嬌等。
+            <span>例如：是否具攻擊性、小害羞、愛撒嬌等。</span>
         </p>
 
         <!-- reset所有欄位會回到初始狀態 -->
         <button type="reset">清除</button>
         <button type="submit">送出</button>
     </form>
-    
+
 </body>
+
 </html>
